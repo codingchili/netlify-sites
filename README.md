@@ -7,5 +7,5 @@ Deployed websites
 | -------------- |
 | [Zapperfly-asm](https://zapperfly-asm.com/)  |
 | [Ethereum Ingest](https://ethereum-ingest.com/)|
-| [Kibana Mithril](https://kibana-mithril.com/)] |
+| [Kibana Mithril](https://kibana-mithril.com/) |
 | [Excelastic](https://excelastic.com/)     |
