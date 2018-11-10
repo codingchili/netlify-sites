@@ -10,22 +10,21 @@
     "accent": "#FF9800"
   },
   "text": {
-    "heading": "zapperfly-asm",
+    "heading": "Zapperfly Assembler",
     "subheading": "A tiny build server for large projects.",
     "hints": [{
-      "icon": "fas fa-fighter-jet",
-      "title": "Fast",
-      "content": "Zapperfly is fast! We use hazelcast for clustering and store all build logs in memory. Scales to hundreds of nodes without issues."
-    },
-    {
+      "icon": "fas fa-feather",
+      "title": "Customizable",
+      "content": "A small application makes it easy for developers to create their own integrations without relying on third parties. We are tiny; less than 8K lines of code!"
+    }, {
       "icon": "fas fa-street-view",
       "title": "Simple",
       "content": "User friendly and modern interface ensures our users stay happy. Minimal configuration overhead and works both on windows and linux, even inside a docker container."
     },
     {
-      "icon": "fas fa-feather",
-      "title": "Customizable",
-      "content": "A small application makes it easy for developers to create their own integrations without relying on third parties. We are tiny; less than 8K lines of code!"
+      "icon": "fas fa-fighter-jet",
+      "title": "Fast",
+      "content": "Zapperfly is fast! We use hazelcast for clustering and store all build logs in memory. Scales to hundreds of nodes without issues."
     }],
     "features": {
         "enabled": true,

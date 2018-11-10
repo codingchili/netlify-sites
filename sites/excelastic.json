@@ -14,7 +14,7 @@
     "heading": "Excelastic",
     "subheading": "Import utility for ElasticSearch for excel and CSV files.",
     "hints": [{
-      "icon": "fas-fa desktop",
+      "icon": "fas fa-desktop",
       "title": "Accessible",
       "content": "With an user friendly web interface employees in sales/management can use it too! If you need authentication simply setup a reverse proxy."
     },
