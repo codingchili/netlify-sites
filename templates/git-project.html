@@ -36,6 +36,14 @@
         mix-blend-mode: multiply;
     }
 
+    form {
+    	margin-bottom: 0;
+    }
+
+    label {
+    	font-weight: 200;
+    }
+
     #content {
         animation: fadein 0.8s;
     }
@@ -240,28 +248,26 @@
         text-align: center;
     }
 
-    #features {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.29), 0 12px 24px 0 rgba(0, 0, 0, 0.19);
+    .feature-table {
+        width: 80%;
+        margin: auto;
+    }
+
+    .card {
         background-color: #fff;
         color: #323232;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.29), 0 12px 24px 0 rgba(0, 0, 0, 0.19);
         max-width: 768px;
         margin-top: 16vh;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .feature-table {
-        width: 80%;
-        margin: auto;
-    }
-
-    #instructions {
-        background-color: #fff;
-        color: #323232;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.29), 0 12px 24px 0 rgba(0, 0, 0, 0.19);
-        max-width: 768px;
-        margin: auto;
-        margin-top: 16vh;
+    .form-padding {
+    	padding-left: 24px;
+    	padding-right: 24px;
+    	padding-top: 24px;
+    	padding-bottom: 12px;
     }
 
     #footer {
@@ -300,8 +306,8 @@
         <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
             <i class="fab fa-github menu-item" alt="github"></i>
         </a>
-        <a href="mailto:${contact.email}">
-            <i class="far fa-envelope menu-item" alt="email"></i>
+        <a href="https://www.youtube.com/${contact.youtube_channel}">
+            <i class="fab fa-youtube menu-item" alt="youtube"></i>
         </a>
         <a href="https://www.linkedin.com/in/${contact.linkedin}" rel="noopener noreferrer" target="_blank">
             <i class="fab fa-linkedin menu-item" alt="linkedin"></i>
@@ -354,7 +360,7 @@
         </div>
     </div>
 
-    <div id="features" ${text.features.enabled ? '' : 'hidden'}>
+    <div id="features" class="card" ${text.features.enabled ? '' : 'hidden'}>
         <h5>Features</h5>
         <table class="feature-table">
             <thead>
@@ -379,7 +385,7 @@
         <p>${text.features.content}</p>
     </div>
 
-    <div id="instructions">
+    <div id="instructions" class="card">
 
         <div ${text.instructions.enabled ? '' : 'hidden'}>
             <h5>${text.instructions.header}</h5>
@@ -409,6 +415,33 @@
             <p></p>
         </div>
     </div>
+
+    <div id="contact-form" class="card" ${contact.enabled ? '' : 'hidden'}>
+    	<div class="form-padding">
+    		<p>Please contact me if you have any questions, feedback, feature requests.. or anything else really. </p>
+	    	<form name="contact-${contact.github_repository}" netlify>
+			  <div class="row">
+			    <div class="six columns">
+			      <label for="email">Your email</label>
+			      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="email" name="email">
+			    </div>
+			    <div class="six columns">
+			      <label for="contact_Type">Reason for contacting</label>
+			      <select class="u-full-width" id="contact_type" name="contact_type">
+			      	<option value="feedback">Feature request or Feedback</option>
+			        <option value="bugs">Bug report</option>
+			        <option value="question">Questions or Help</option>
+			        <option value="business">Business</option>
+			        <option value="other">Other</option>
+			      </select>
+			    </div>
+			  </div>
+			  <label for="message"></label>
+			  <textarea class="u-full-width" placeholder="Hi Robin …" id="message"></textarea>
+			  <input class="button button-styled button-primary u-full-width" name="message" type="submit" value="Send">
+			</form>
+	  </div>
+	</div>
 
     <div id="footer">
         <h6>${text.footer} - site generated with <a href="https://github.com/codingchili/sta-mina">sta-mina</a>.</h6>

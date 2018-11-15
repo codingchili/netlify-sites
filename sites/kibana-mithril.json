@@ -53,9 +53,10 @@
     "footer": "&copy Robin Duda 2018"
   },
   "contact": {
+    "enabled": true,
     "github_repository": "kibana-mithril",
     "github_user": "codingchili",
-    "email": "rduda@kth.se",
+    "youtube_channel": "user/MrChilimannen/videos",
     "linkedin": "rduda"
   },
   "external": {
