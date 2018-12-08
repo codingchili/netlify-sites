@@ -256,6 +256,11 @@
             "alt": "github"
           },
           {
+            "href": "https://www.npmjs.com/package/static-mina",
+            "icon": "fab fa-npm",
+            "alt": "npm"
+          },
+          {
             "href": "https://www.youtube.com/watch?v=ZhInxNGllgM",
             "icon": "fab fa-youtube",
             "alt": "youtube"
