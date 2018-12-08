@@ -1,8 +1,8 @@
 {
   "seo": {
-	"analytics": "UA-77574715-999",
-    "title": "Tiny clustered build server for developers - Zapperfly-ASM",
-    "description": "Zapperfly is a tiny yet performant build server for which you can easily make your own integrations and not rely on third parties. The frontend is a modern progressive web application written with Polymer. The backend uses Hazelcast for clustering and is reactive with Vert.x."
+    "analytics": "UA-77574715-999",
+    "title": "Robin Duda - The @codingchili portfolio.",
+    "description": "Robin Duda is a software developer working on a lot of open source projects with friendly licensing. Dancing ninja style on the cutting edge of new technology and libraries."
   },
   "theme": {
     "from": "#323232",
@@ -10,54 +10,188 @@
     "accent": "#b700b0"
   },
   "text": {
-    "heading": "Zapperfly Assembler",
-    "subheading": "A tiny build server for large projects.",
-    "hints": [{
-      "icon": "fas fa-feather",
-      "title": "Customizable",
-      "content": "A small application makes it easy for developers to create their own integrations without relying on third parties. We are tiny; less than 8K lines of code!"
-    }, {
-      "icon": "fas fa-street-view",
-      "title": "Simple",
-      "content": "User friendly and modern interface ensures our users stay happy. Minimal configuration overhead and works both on windows and linux, even inside a docker container."
+    "whoami": {
+      "irl": "Robin Duda",
+      "online": "codingchili",
+      "description": "Software developer working on a lot of open source projects with friendly licensing. I'm interested in a lot of things but is currently working with Vert.x, Hazelcast, ElasticSearch, Web Components, Polymer, CQEngine, Web app security, aiohttp/asyncio and even some Android.Mostly using Java, Python and JavaScript for web development but trying to learn some Kotlin on Android and Vyper for the EVM. I like microservices and Docker and dislike application servers and object relational mappers."
     },
-    {
-      "icon": "fas fa-fighter-jet",
-      "title": "Fast",
-      "content": "Zapperfly is fast! We use hazelcast for clustering and store all build logs in memory. Scales to hundreds of nodes without issues."
-    }],
-    "features": {
-        "enabled": true,
-        "licenses": ["Supported"],
-        "list": [
-            {"name": "Build scheduling over multiple hosts", "supported": ["check"]},
-            {"name": "Real time log monitoring", "supported": ["check"]},
-            {"name": "Run builds within docker containers", "supported": ["check"]},
-            {"name": "Tune workload per instance", "supported": ["check"]},
-            {"name": "Role based authentication", "supported": ["check"]},
-            {"name": "Easy plugin system for integrations", "supported": ["check"]},
-            {"name": "Plugin: Jira update build status", "supported": ["check"]},
-            {"name": "Plugin: stash webhook receiver", "supported": ["check"]},
-            {"name": "Plugin: github webhook receiver", "supported": ["clock"]},
-            {"name": "SVG build status bagde", "supported": ["clock"]}
+    "projects": [
+      {
+        "name": "Zapperfly Assembler",
+        "description": "Zapperfly assembler is a clustered build server that aims to be small and easy to customize without relying on third party plugins.",
+        "image": "img/zapperfly.jpg",
+        "tags": [
+          "hazelcast",
+          "vert.x",
+          "polymer"
         ],
-        "content": "Zapperfly aims to be a minimal bootstrap platform for creating a set of distributed build servers. This means that we encourage our users to create their own modifications and plugins. The plugins provided can be used as an example for developing new plugins."
-    },
-    "instructions": {
-      "enabled": true,
-      "header": "Setup",
-      "start": "Setting up your own cluster is easy, simply start the application with,",
-      "command": "java -jar zapperfly.jar --website",
-      "end": "This starts the server with the management website enabled and the default cluster group.",
-      "docker": {
-        "enabled": true,
-        "hub": "https://hub.docker.com/r/codingchili/zapperfly/"
+        "links": [
+          {
+            "href": "https://zapperfly-asm.com/",
+            "icon": "fas fa-link",
+            "alt": "website"
+          },
+          {
+            "href": "https://github.com/codingchili/zapperfly-asm",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=t4fKgGerj8I",
+            "icon": "fab fa-youtube",
+            "alt": "youtube"
+          }
+        ]
       },
-      "staging": {
-        "enabled": false,
-        "url": "https://staging.zapperfly.com/"
+      {
+        "name": "Mouse Enigma",
+        "description": "An Android password manager with support for using your fingerprint as biometric authentication. Passwords are hashed with Scrypt and encrypted with a AES256 key stored in the trusted execution environment.",
+        "image": "img/mouse_enigma.jpg",
+        "tags": [
+          "kotlin",
+          "android",
+          "security"
+        ],
+        "links": [
+          {
+            "href": "https://github.com/codingchili/enigmatic-mouse",
+            "icon": "fab fa-github",
+            "alt": "github"
+          }
+        ]
+      },
+      {
+        "name": "Kibana Mithril",
+        "description": "A plugin for Kibana that adds authentication to access the user interface. Works with LDAP and has support for 2-factor authentication. Users may be stored in a local json file, MongoDB or LDAP.",
+        "image": "img/mithril.png",
+        "tags": [
+          "kibana",
+          "nodejs",
+          "security"
+        ],
+        "links": [
+          {
+            "href": "https://kibana-mithril.com/",
+            "icon": "fas fa-link",
+            "alt": "website"
+          },
+          {
+            "href": "https://github.com/codingchili/kibana-mithril",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=vvUdpPQhBjk",
+            "icon": "fab fa-youtube",
+            "alt": "youtube"
+          }
+        ]
+      },
+      {
+        "name": "Excelastic",
+        "description": "Excelastic is a web interface and commandline utility to load data into ElasticSearch. It supports xlsx/xls and CSV files and focuses on ease of use.",
+        "image": "img/excelastic.webp",
+        "tags": [
+          "elasticsearch",
+          "vert.x",
+          "bootstrap"
+        ],
+        "links": [
+          {
+            "href": "https://excelastic.com/",
+            "icon": "fas fa-link",
+            "alt": "website"
+          },
+          {
+            "href": "https://github.com/codingchili/excelastic",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=x2KuhN1RZ4s",
+            "icon": "fab fa-youtube",
+            "alt": "youtube"
+          }
+        ]
+      },
+      {
+        "name": "Ethereum Ingest",
+        "description": "Ethereum ingest is an ingest utility capable of importing events from the Ethereum blockchain into ElasticSearch, MongoDB, Hazelcast and CQEngine.",
+        "image": "img/eth-ingest.webp",
+        "tags": [
+          "elasticsearch",
+          "hazelcast",
+          "mongodb",
+          "cqengine",
+          "vert.x",
+          "javafx"
+        ],
+        "links": [
+          {
+            "href": "https://ethereum-ingest.com/",
+            "icon": "fas fa-link",
+            "alt": "website"
+          },
+          {
+            "href": "https://github.com/codingchili/ethereum-ingest",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=FFI9OnW9IuI",
+            "icon": "fab fa-youtube",
+            "alt": "youtube"
+          }
+        ]
+      },
+      {
+        "name": "Cartlet",
+        "description": "An E-commerce platform built on an older stack (2015) and completely refurbished in 2018! Upgraded security, performance, design, code style and dependencies to rock harder than ever.",
+        "image": "img/cartlet.png",
+        "tags": [
+          "jdbc",
+          "mysql",
+          "undertow",
+          "bootstrap"
+        ],
+        "links": [
+          {
+            "href": "https://github.com/codingchili/cartlet",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=gUCBCB0Om-8",
+            "icon": "fab fa-youtube",
+            "alt": "youtube"
+          }
+        ]
+      },
+      {
+        "name": "Unicorn Analytics",
+        "description": "Pulls statistics from google analytics API's and visualizes it on a Pimoroni Unicorn hat HD.",
+        "image": "img/unicorn.jpg",
+        "tags": [
+          "python",
+          "asyncio",
+          "aiohttp",
+          "google",
+          "raspberry"
+        ],
+        "links": [
+          {
+            "href": "https://github.com/codingchili/unicorn-analytics",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=1gJUQbLNiUk",
+            "icon": "fab fa-youtube",
+            "alt": "youtube"
+          }
+        ]
       }
-    },
+    ],
     "footer": "&copy Robin Duda 2018"
   },
   "contact": {
@@ -68,7 +202,5 @@
     "linkedin": "rduda"
   },
   "external": {
-    "banner": "https://raw.githubusercontent.com/codingchili/zapperfly-asm/master/preview.webp",
-    "youtube": "https://www.youtube.com/embed/t4fKgGerj8I"
   }
 }
