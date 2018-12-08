@@ -23,7 +23,8 @@
         "tags": [
           "hazelcast",
           "vert.x",
-          "polymer"
+          "polymer",
+          "chili-core"
         ],
         "links": [
           {
@@ -124,7 +125,9 @@
           "mongodb",
           "cqengine",
           "vert.x",
-          "javafx"
+          "javafx",
+          "ethereum",
+          "chili-core"
         ],
         "links": [
           {
@@ -186,6 +189,146 @@
           },
           {
             "href": "https://www.youtube.com/watch?v=1gJUQbLNiUk",
+            "icon": "fab fa-youtube",
+            "alt": "youtube"
+          }
+        ]
+      },
+      {
+        "name": "Flashcards Webapp",
+        "description": "Web application to share and study with flashcards online, uses my chili-core framework for networking and storage.",
+        "image": "img/flashcards.png",
+        "tags": [
+          "vert.x",
+          "polymer",
+          "cqengine",
+          "chili-core"
+        ],
+        "links": [
+          {
+            "href": "https://flashcardsalligator.com/",
+            "icon": "fas fa-link",
+            "alt": "website"
+          },
+          {
+            "href": "https://github.com/codingchili/flashcards-webapp",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=1LcJ4d6hzA8",
+            "icon": "fab fa-youtube",
+            "alt": "youtube"
+          }
+        ]
+      },
+      {
+        "name": "Static Mina",
+        "description": "A static site generator with partial support for dynamic rendering which relies on ES6 template literals. Fun fact: this site is generated with static-mina and the gitfolio template!",
+        "image": "img/stamina.png",
+        "tags": [
+          "nodejs"
+        ],
+        "links": [
+          {
+            "href": "https://github.com/codingchili/static-mina",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=ZhInxNGllgM",
+            "icon": "fab fa-youtube",
+            "alt": "youtube"
+          }
+        ]
+      },
+      {
+        "name": "Coinbase Casted",
+        "description": "Chromecast receiver and sender application to livestream the coinbase websocked feed in real time. Uses the latest iteration (CAF - v3) of the chromecast framework.",
+        "image": "img/coinbasecasted.jpg",
+        "tags": [
+          "chromecast",
+          "javascript",
+          "ethereum"
+        ],
+        "links": [
+          {
+            "href": "https://coinbasecasted.com/",
+            "icon": "fas fa-link",
+            "alt": "website"
+          },
+          {
+            "href": "https://github.com/codingchili/chromecast-coinbase-feed",
+            "icon": "fab fa-github",
+            "alt": "github"
+          }
+        ]
+      },
+      {
+        "name": "2D MMORPG",
+        "description": "A 2D voxelish MMORPG game that runs in the browser using HTML5 with pixijs. The backend is built with microservices and my chili-core framework.",
+        "image": "img/extgame.png",
+        "tags": [
+          "javascript",
+          "vert.x",
+          "chili-core",
+          "pixijs",
+          "polymer"
+        ],
+        "links": [
+          {
+            "href": "https://github.com/codingchili/chili-game-ext",
+            "icon": "fab fa-github",
+            "alt": "github"
+          }
+        ]
+      },
+      {
+        "name": "Pi-zero Ethermeter",
+        "description": "Uses the cryptocompare API to retrieve the current price of a chosen cryptocurrency trading pair. The change in the last 24 hours is displayed on a Pimoroni Blinkt.",
+        "image": "img/ethermeter.jpg",
+        "tags": [
+          "python",
+          "asyncio",
+          "aiohttp",
+          "raspberry",
+          "ethereum"
+        ],
+        "links": [
+          {
+            "href": "https://github.com/codingchili/pi-zero-ethermeter",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=rkcM4-2oynY",
+            "icon": "fab fa-youtube",
+            "alt": "youtube"
+          }
+        ]
+      },
+      {
+        "name": "Onegram",
+        "description": "An Instagram-like Android application, only less refined. Support for uploading images, tagging, searching and saving to the users gallery. The backend runs on NodeJS with MongoDB.",
+        "image": "img/onegram.png",
+        "tags": [
+          "android",
+          "mongodb",
+          "nodejs"
+        ],
+        "links": [
+          {
+            "href": "https://github.com/codingchili/onegram-android",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://github.com/codingchili/onegram-server",
+            "icon": "fab fa-github",
+            "alt": "github"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=86SiHCIcKv0",
             "icon": "fab fa-youtube",
             "alt": "youtube"
           }
