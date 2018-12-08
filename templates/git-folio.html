@@ -190,17 +190,18 @@
         }
 
         .project {
+            animation-delay: 0.2s;
             opacity: 0;
             width: 300px;
             height: 564px;
             position: relative;
-            animation: fadein 0.3s ease-in 1;
+            animation: fadein 0.26s ease-in 1;
             animation-fill-mode: forwards;
         }
 
         ${text.projects.map((item, index) =>`
-        .project:nth-of-type(${index + 2}) {
-            animation-delay: ${index * 0.16}s;
+        .project:nth-of-type(${index + 1}) {
+            animation-delay: ${index * 0.08 + 0.2}s;
         }
         `).join('')}
 
