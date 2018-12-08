@@ -38,6 +38,9 @@
 
     #content {
         animation: fadein 0.8s;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     @keyframes fadein {
@@ -112,10 +115,6 @@
         width: 100%;
     }
 
-    #landing {
-        height: 100vh;
-        text-align: center;
-    }
 
     #footer {
         width: 100%;
@@ -124,10 +123,6 @@
         margin-top: 32px;
         margin-bottom: 16px;
     }
-
-	.terminal {
-		
-	}
 
     .code-block {
 		white-space: normal;
@@ -145,17 +140,53 @@
         margin: 0;
     }
 
+    .card {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.29), 0 12px 24px 0 rgba(0, 0, 0, 0.19);
+        background-color: #fff;
+        color: #323232;
+        margin: 12px;
+        padding: 12px;
+    }
+
 	#whoami {
-		margin-top: 12vh;
+        width: 246px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
 	}
 
+    @media screen and (min-width: 1138px) {
+        #whoami {
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+    }
+
+    .whoami-header {
+        display: block;
+        padding-top: 16px;
+    }
+
 	#image {
-		max-width: 30px;
-		margin-top: 0px;
-		position: absolute;
-		right: 12px;
-		top: 8px;	
+        margin-top: 32px;
+		max-width: 128px;
+        max-height: 128px;
+        height: auto;
+        width: auto;
 	}
+
+    #projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project {
+        height: 326px;
+    }
 
 	#projects-button {	
 		margin-top: 4vh;
@@ -165,8 +196,7 @@
 </head>
 <body bgcolor="black">
 
-<div id="content">
-    <div class="menu">
+<div class="menu">
         <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
             <i class="fab fa-github menu-item" alt="github"></i>
         </a>
@@ -177,47 +207,92 @@
             <i class="fab fa-linkedin menu-item" alt="linkedin"></i>
         </a>
 
-		<a href="https://s.gravatar.com/avatar/d2f060eb8b0f4a895677cfc0d13225fc?size=496&default=retro">
-			<img id="image" src="https://s.gravatar.com/avatar/d2f060eb8b0f4a895677cfc0d13225fc?size=496&default=retro"></img>
-		</a>
     </div>
 
-    <div id="landing">
+<div id="content">
 
-		<!-- whoami -->
-		<div id="whoami">
-			<div id="terminal">
-				<code class="code-block">
-					# whoami <br>
-					# Software like nanananannaa.<br>
-					# Software like nanananannaa.<br>
-					# Software like nanananannaa.<br>
-					# Software like nanananannaa.<br>
-					# Software like nanananannaa.<br>
-					<ul>
-						<li></li>
+	<!-- whoami -->
+	<div id="whoami" class="card">
+        <span class="whoami-header">Robin Duda</span>
 
-						
-					</ul>
-				</code>
-			</div>
-		</div>
+        <a href="https://s.gravatar.com/avatar/d2f060eb8b0f4a895677cfc0d13225fc?size=496&default=retro">
+        <img id="image" src="https://s.gravatar.com/avatar/d2f060eb8b0f4a895677cfc0d13225fc?size=496&default=retro"></img>
+        </a>
 
-		<a>
-			<button id="projects-button" class="button button-style">To Projects</a>
-		</a>
+        <div id="whoami-description">
+            The software developer
+        </div>
+	</div>
 
-    </div>
 
 	<div id="projects">
+
+        <div class="project card">
+            <div class="project-title">
+                Zappefly Assembler
+            </div>
+            <div class="image">
+                
+            </div>
+            <div class="project-tags">
+                #buildserver #jenkins #ci
+            </div>
+            <div class="project-text">
+                <p>
+                    The zapperfly assembler zap zap.
+                </p>
+            </div>
+            <div class="project-links">
+                "icon" "icon"
+            </div>
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                Zappefly Assembler
+            </div>
+            <div class="image">
+                
+            </div>
+            <div class="project-tags">
+                #buildserver #jenkins #ci
+            </div>
+            <div class="project-text">
+                <p>
+                    The zapperfly assembler zap zap.
+                </p>
+            </div>
+            <div class="project-links">
+                "icon" "icon"
+            </div>
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                Zappefly Assembler
+            </div>
+            <div class="image">
+                
+            </div>
+            <div class="project-tags">
+                #buildserver #jenkins #ci
+            </div>
+            <div class="project-text">
+                <p>
+                    The zapperfly assembler zap zap.
+                </p>
+            </div>
+            <div class="project-links">
+                "icon" "icon"
+            </div>
+        </div>
 
 		<!-- foreach on projects. -->
 
 	</div>
-
-    <div id="footer">
+</div>
+<div id="footer">
         <h6>${text.footer} - site generated with <a href="https://github.com/codingchili/sta-mina">sta-mina</a>.</h6>
     </div>
-</div>
 </body>
 </html>

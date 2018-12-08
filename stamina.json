@@ -1,0 +1,34 @@
+{
+  "sites": [
+  	{
+  		"template": "templates/git-folio.html",
+  		"data": "sites/gitfolio.json",
+  		"dynamic": false,
+  		"web": "./web"
+  	},
+    {
+      "template": "templates/git-project.html",
+      "data": "sites/zapperfly.json",
+      "dynamic": false,
+      "web": "./web"
+    },
+    {
+	  "template": "templates/git-project.html",
+      "data": "sites/eth-ingest.json",
+      "dynamic": false,
+      "web": "./web"
+    },
+    {
+      "template": "templates/git-project.html",
+      "data": "sites/excelastic.json",
+      "dynamic": false,
+      "web": "./web"
+    },
+    {
+      "template": "templates/git-project.html",
+      "data": "sites/kibana-mithril.json",
+      "dynamic": false,
+      "web": "./web"
+    }
+  ]
+}
