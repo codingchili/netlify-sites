@@ -38,6 +38,11 @@
             "alt": "github"
           },
           {
+            "href": "https://hub.docker.com/r/codingchili/zapperfly/",
+            "icon": "fab fa-docker",
+            "alt": "docker"
+          },
+          {
             "href": "https://www.youtube.com/watch?v=t4fKgGerj8I",
             "icon": "fab fa-youtube",
             "alt": "youtube"
@@ -109,6 +114,11 @@
             "alt": "github"
           },
           {
+            "href": "https://hub.docker.com/r/codingchili/excelastic/",
+            "icon": "fab fa-docker",
+            "alt": "docker"
+          },
+          {
             "href": "https://www.youtube.com/watch?v=x2KuhN1RZ4s",
             "icon": "fab fa-youtube",
             "alt": "youtube"
@@ -164,6 +174,11 @@
             "alt": "github"
           },
           {
+            "href": "https://hub.docker.com/r/codingchili/cartlet/",
+            "icon": "fab fa-docker",
+            "alt": "docker"
+          },
+          {
             "href": "https://www.youtube.com/watch?v=gUCBCB0Om-8",
             "icon": "fab fa-youtube",
             "alt": "youtube"
@@ -214,6 +229,11 @@
             "href": "https://github.com/codingchili/flashcards-webapp",
             "icon": "fab fa-github",
             "alt": "github"
+          },
+          {
+            "href": "https://hub.docker.com/r/codingchili/flashcards/",
+            "icon": "fab fa-docker",
+            "alt": "docker"
           },
           {
             "href": "https://www.youtube.com/watch?v=1LcJ4d6hzA8",
