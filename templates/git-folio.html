@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>${seo.title}</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes"> 
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
     <meta name="theme-color" content="${theme.to}">
     <meta name="description" content="${seo.description}">
 
@@ -11,288 +11,668 @@
     <link rel="preconnect" href="${external.banner}"/>
     <link rel="shortcut icon" href="../favicon.ico"/>
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=${seo.analytics}"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${seo.analytics}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}   
-
-		gtag('js', new Date());
-		gtag('config', '${seo.analytics}'); 
-	</script>
-
-<style>
-    html {
-        overflow-x: hidden;
-    }
-
-    body {
-        padding: 0;
-        margin: 0;
-        color: #1EAEDB;
-        background-image: linear-gradient(to right, ${theme.from}, ${theme.to});
-        mix-blend-mode: multiply;
-    }
-
-    #content {
-        animation: fadein 0.8s;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    @keyframes fadein {
-        from {
-            opacity: 0;
+        function gtag() {
+            dataLayer.push(arguments);
         }
-        to {
-            opacity: 1;
+
+        gtag('js', new Date());
+        gtag('config', '${seo.analytics}');
+    </script>
+
+    <style>
+        html {
+            overflow-x: hidden;
         }
-    }
 
-    .button-opaque {
-        border-color: ${theme.to} !important;
-        color: white;
-    }
-
-    .button-opaque:hover {
-        color: white;
-        background-color: ${theme.to} !important;
-        border-color: ${theme.to} !important;
-    }
-
-    .button-styled {
-        background-color: ${theme.accent} !important;
-        border-color: ${theme.accent} !important;
-    }
-
-    .button-styled:hover {
-        background-color: ${theme.to} !important;
-        border-color: ${theme.to} !important;
-    }
-
-    @media (max-width: 1024px) {
-        .mobile-hidden {
-            visibility: hidden;
+        body {
+            padding: 0;
+            margin: 0;
+            color: #fff;
+            background-image: linear-gradient(to right, ${theme.from}, ${theme.to});
+            mix-blend-mode: multiply;
         }
-    }
 
-    i {
-        font-size: 32px;
-        padding: 6px;
-        min-width: 32px;
-        min-height: 32px;
-        color: ${theme.to};
-    }
+        #content {
+            animation: fadein 0.8s;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
 
-    .menu-item {
-        cursor: pointer;
-    }
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
-    .menu-item:hover {
-        color: ${theme.accent};
-    }
+        .button-opaque {
+            border-color: ${theme.to} !important;
+            color: white;
+        }
 
-    a, a:link, a:visited {
-        text-decoration: none;
-        color: ${theme.accent};
-    }
+        .button-opaque:hover {
+            color: white;
+            background-color: ${theme.to} !important;
+            border-color: ${theme.to} !important;
+        }
 
-    a:hover, a:active {
-        text-decoration: none;
-        color: ${theme.to};
-    }
+        .button-styled {
+            background-color: ${theme.accent} !important;
+            border-color: ${theme.accent} !important;
+        }
 
-    .text-center {
-        text-align: center;
-    }
+        .button-styled:hover {
+            background-color: ${theme.to} !important;
+            border-color: ${theme.to} !important;
+        }
 
+        @media (max-width: 1024px) {
+            .mobile-hidden {
+                visibility: hidden;
+            }
+        }
 
-    .menu {
-        background-image: linear-gradient(to right, ${theme.from}, ${theme.to});EDB
-        width: 100%;
-    }
+        i {
+            font-size: 32px;
+            padding: 6px;
+            min-width: 32px;
+            min-height: 32px;
+            color: ${theme.to};
+        }
 
+        .menu-item {
+            cursor: pointer;
+        }
 
-    #footer {
-        width: 100%;
-        text-align: center;
-        color: #fff;
-        margin-top: 32px;
-        margin-bottom: 16px;
-    }
+        .menu-item:hover {
+            color: ${theme.accent};
+        }
 
-    .code-block {
-		white-space: normal;
-		display: block;
-		background: #000;
-        text-align: left;
-        width: 80%;
-        margin: auto;
-		font-size: 1.2em;
+        a, a:link, a:visited {
+            text-decoration: none;
+            color: ${theme.accent};
+        }
 
-    }
+        a:hover, a:active {
+            text-decoration: none;
+            color: ${theme.to};
+        }
 
-    p, h1, h2, h3, h4, h5, h6 {
-        padding: 24px;
-        margin: 0;
-    }
+        .menu {
+            background-image: linear-gradient(to right, ${theme.from}, ${theme.to});
+            width: 100%;
+        }
 
-    .card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.29), 0 12px 24px 0 rgba(0, 0, 0, 0.19);
-        background-color: #fff;
-        color: #323232;
-        margin: 12px;
-        padding: 12px;
-    }
+        #footer {
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
 
-	#whoami {
-        width: 246px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-	}
+        p, h1, h2, h3, h4, h5, h6 {
+            padding: 24px;
+            margin: 0;
+        }
 
-    @media screen and (min-width: 1138px) {
+        .card {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.29), 0 12px 24px 0 rgba(0, 0, 0, 0.19);
+            background-color: #fff;
+            color: #323232;
+            margin: 12px;
+            padding: 12px;
+        }
+
         #whoami {
-            margin-left: 32px;
-            margin-right: 32px;
+            text-align: center;
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+
+            background: linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+            linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+            linear-gradient(315deg, black 25%, transparent 25%),
+            linear-gradient(45deg, black 25%, transparent 25%);
+            background-size: 2em 2em;
+            background-color: #232323;
         }
-    }
 
-    .whoami-header {
-        display: block;
-        padding-top: 16px;
-    }
+        #whoami-irl {
+            display: block;
+        }
 
-	#image {
-        margin-top: 32px;
-		max-width: 128px;
-        max-height: 128px;
-        height: auto;
-        width: auto;
-	}
+        @media screen and (max-width: 1060px) {
+            #whoami {
+                display: unset;
+            }
+        }
 
-    #projects {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        #whoami-description {
+            margin-top: 28px;
+            margin-left: 32px;
+            text-align: left;
+        }
 
-    .project {
-        height: 326px;
-    }
+        #whoami-online {
+            display: block;
+        }
 
-	#projects-button {	
-		margin-top: 4vh;
-	}
+        #image {
+            margin-top: 8px;
+            max-width: 128px;
+            max-height: 128px;
+            height: auto;
+            width: auto;
+        }
 
-</style>
+        #projects {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1263px;
+        }
+
+        .project {
+            width: 300px;
+        }
+
+        .project-links {
+            text-align: center;
+        }
+
+        .project-image {
+            max-width: 300px;
+        }
+
+        .project-filter {
+            width: 100%;
+            text-align: center;
+        }
+
+        .filter-clear {
+            font-size: 16px;
+            min-width: unset;
+            min-height: unset;
+            margin-top: -1px;
+            position: absolute;
+            margin-left: 4px;
+        }
+
+        #contact-form {
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 128px;
+        }
+
+
+    </style>
+    <script>
+        function filter(query) {
+            let projects = document.getElementById('projects').querySelectorAll('.project');
+            let header = document.getElementById('filter-header');
+
+            console.log(header);
+
+            if (query === '*') {
+                header.innerText = 'Showing all projects';
+            } else {
+                header.innerText = 'Showing all projects tagged with ' + query;
+            }
+
+            projects.forEach(project => {
+                let visible = false;
+
+                if (query === "*") {
+                    visible = true;
+                } else {
+                    let tags = project.querySelector('.project-tags').children;
+
+                    for (let tag of tags) {
+                        visible = tag.innerText.includes(query) || visible;
+                    }
+                }
+                project.style.display = visible ? 'block' : 'none';
+            })
+        }
+
+        function clear() {
+            filter("*");
+        }
+    </script>
 </head>
 <body bgcolor="black">
 
 <div class="menu">
-        <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
-            <i class="fab fa-github menu-item" alt="github"></i>
-        </a>
-        <a href="mailto:${contact.email}">
-            <i class="far fa-envelope menu-item" alt="email"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/${contact.linkedin}" rel="noopener noreferrer" target="_blank">
-            <i class="fab fa-linkedin menu-item" alt="linkedin"></i>
-        </a>
+    <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+        <i class="fab fa-github menu-item" alt="github"></i>
+    </a>
+    <a href="https://www.youtube.com/${contact.youtube_channel}">
+        <i class="fab fa-youtube menu-item" alt="youtube"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/${contact.linkedin}" rel="noopener noreferrer" target="_blank">
+        <i class="fab fa-linkedin menu-item" alt="linkedin"></i>
+    </a>
 
-    </div>
+</div>
 
 <div id="content">
 
-	<!-- whoami -->
-	<div id="whoami" class="card">
-        <span class="whoami-header">Robin Duda</span>
+    <!-- whoami -->
+    <div id="whoami" class="card">
 
-        <a href="https://s.gravatar.com/avatar/d2f060eb8b0f4a895677cfc0d13225fc?size=496&default=retro">
-        <img id="image" src="https://s.gravatar.com/avatar/d2f060eb8b0f4a895677cfc0d13225fc?size=496&default=retro"></img>
-        </a>
+        <div>
+            <span id="whoami-irl">Robin Duda</span>
+
+            <a href="https://s.gravatar.com/avatar/d2f060eb8b0f4a895677cfc0d13225fc?size=496&default=retro">
+                <img id="image"
+                     src="https://s.gravatar.com/avatar/d2f060eb8b0f4a895677cfc0d13225fc?size=496&default=retro"/>
+            </a>
+
+            <span id="whoami-online">@codingchili</span>
+        </div>
 
         <div id="whoami-description">
-            The software developer
+            Software developer working on a lot of open source projects with friendly licensing.
+            I'm interested in a lot of things but is currently working with Vert.x, Hazelcast, ElasticSearch, Web Components, Polymer, CQEngine, Web app security, aiohttp/asyncio and even some Android.
+            Mostly using Java, Python and JavaScript for web development but trying to learn some Kotlin on Android and Vyper for the EVM. I like microservices and Docker and dislike application servers and object relational mappers.
         </div>
-	</div>
-
-
-	<div id="projects">
-
-        <div class="project card">
-            <div class="project-title">
-                Zappefly Assembler
-            </div>
-            <div class="image">
-                
-            </div>
-            <div class="project-tags">
-                #buildserver #jenkins #ci
-            </div>
-            <div class="project-text">
-                <p>
-                    The zapperfly assembler zap zap.
-                </p>
-            </div>
-            <div class="project-links">
-                "icon" "icon"
-            </div>
-        </div>
-
-        <div class="project card">
-            <div class="project-title">
-                Zappefly Assembler
-            </div>
-            <div class="image">
-                
-            </div>
-            <div class="project-tags">
-                #buildserver #jenkins #ci
-            </div>
-            <div class="project-text">
-                <p>
-                    The zapperfly assembler zap zap.
-                </p>
-            </div>
-            <div class="project-links">
-                "icon" "icon"
-            </div>
-        </div>
-
-        <div class="project card">
-            <div class="project-title">
-                Zappefly Assembler
-            </div>
-            <div class="image">
-                
-            </div>
-            <div class="project-tags">
-                #buildserver #jenkins #ci
-            </div>
-            <div class="project-text">
-                <p>
-                    The zapperfly assembler zap zap.
-                </p>
-            </div>
-            <div class="project-links">
-                "icon" "icon"
-            </div>
-        </div>
-
-		<!-- foreach on projects. -->
-
-	</div>
-</div>
-<div id="footer">
-        <h6>${text.footer} - site generated with <a href="https://github.com/codingchili/sta-mina">sta-mina</a>.</h6>
     </div>
+
+
+    <div id="projects">
+
+        <div class="project-filter">
+            <span id="filter-header">Showing all projects</span>
+
+            <a href="javascript:clear();" rel="noopener noreferrer" target="_blank">
+                <i class="fas fa-times menu-item filter-clear" alt="clear filter"></i>
+            </a>
+
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                <h5>Zapperfly Assembler</h5>
+            </div>
+            <a href="img/zapperfly.jpg">
+                <img class="project-image" src="img/zapperfly.jpg">
+            </a>
+            <div class="project-tags">
+                <a href="javascript:filter('clustering');">#clustering</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+            </div>
+            <div class="project-text">
+                <p>
+                    ”Zapperfly assembler is a clustered build server that aims to be small and easy to customize without
+                    relying on third party plugins.”
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                <h5>Zapperfly Assembler</h5>
+            </div>
+            <a href="img/zapperfly.jpg">
+                <img class="project-image" src="img/zapperfly.jpg">
+            </a>
+            <div class="project-tags">
+                <a href="javascript:filter('clustering');">#clustering</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+            </div>
+            <div class="project-text">
+                <p>
+                    ”Zapperfly assembler is a clustered build server that aims to be small and easy to customize without
+                    relying on third party plugins.”
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                <h5>Zapperfly Assembler</h5>
+            </div>
+            <a href="img/zapperfly.jpg">
+                <img class="project-image" src="img/zapperfly.jpg">
+            </a>
+            <div class="project-tags">
+                <a href="javascript:filter('clustering');">#clustering</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+            </div>
+            <div class="project-text">
+                <p>
+                    ”Zapperfly assembler is a clustered build server that aims to be small and easy to customize without
+                    relying on third party plugins.”
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                <h5>Zapperfly Assembler</h5>
+            </div>
+            <a href="img/zapperfly.jpg">
+                <img class="project-image" src="img/zapperfly.jpg">
+            </a>
+            <div class="project-tags">
+                <a href="javascript:filter('clustering');">#clustering</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+            </div>
+            <div class="project-text">
+                <p>
+                    ”Zapperfly assembler is a clustered build server that aims to be small and easy to customize without
+                    relying on third party plugins.”
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                <h5>Zapperfly Assembler</h5>
+            </div>
+            <a href="img/zapperfly.jpg">
+                <img class="project-image" src="img/zapperfly.jpg">
+            </a>
+            <div class="project-tags">
+                <a href="javascript:filter('clustering');">#clustering</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+            </div>
+            <div class="project-text">
+                <p>
+                    ”Zapperfly assembler is a clustered build server that aims to be small and easy to customize without
+                    relying on third party plugins.”
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                <h5>Zapperfly Assembler</h5>
+            </div>
+            <a href="img/zapperfly.jpg">
+                <img class="project-image" src="img/zapperfly.jpg">
+            </a>
+            <div class="project-tags">
+                <a href="javascript:filter('clustering');">#clustering</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+            </div>
+            <div class="project-text">
+                <p>
+                    ”Zapperfly assembler is a clustered build server that aims to be small and easy to customize without
+                    relying on third party plugins.”
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                <h5>Zapperfly Assembler</h5>
+            </div>
+            <a href="img/zapperfly.jpg">
+                <img class="project-image" src="img/zapperfly.jpg">
+            </a>
+            <div class="project-tags">
+                <a href="javascript:filter('clustering');">#clustering</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+            </div>
+            <div class="project-text">
+                <p>
+                    ”Zapperfly assembler is a clustered build server that aims to be small and easy to customize without
+                    relying on third party plugins.”
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                <h5>Zapperfly Assembler</h5>
+            </div>
+            <a href="img/zapperfly.jpg">
+                <img class="project-image" src="img/zapperfly.jpg">
+            </a>
+            <div class="project-tags">
+                <a href="javascript:filter('clustering');">#clustering</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+            </div>
+            <div class="project-text">
+                <p>
+                    ”Zapperfly assembler is a clustered build server that aims to be small and easy to customize without
+                    relying on third party plugins.”
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project card">
+            <div class="project-title">
+                <h5>Zapperfly Assembler</h5>
+            </div>
+            <a href="img/zapperfly.jpg">
+                <img class="project-image" src="img/zapperfly.jpg">
+            </a>
+            <div class="project-tags">
+                <a href="javascript:filter('clustering');">#clustering</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('buildserver');">#buildserver</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+                <a href="javascript:filter('ci');">#ci</a>
+            </div>
+            <div class="project-text">
+                <p>
+                    ”Zapperfly assembler is a clustered build server that aims to be small and easy to customize without
+                    relying on third party plugins.”
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+
+                <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-github menu-item" alt="github"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- foreach on projects. -->
+
+    </div>
+</div>
+
+<div id="contact-form" class="card" ${contact.enabled ? '' : 'hidden'}>
+    <div class="form-padding">
+        <p>Please contact me if you have any questions, feedback, feature requests.. or anything else really. </p>
+        <form name="contact-${contact.github_repository}" netlify>
+            <div class="row">
+                <div class="six columns">
+                    <label for="email">Your email</label>
+                    <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="email" name="email">
+                </div>
+                <div class="six columns">
+                    <label for="contact_Type">Reason for contacting</label>
+                    <select class="u-full-width" id="type" name="type">
+                        <option value="feedback">Feature request or Feedback</option>
+                        <option value="bugs">Bug report</option>
+                        <option value="question">Questions or Help</option>
+                        <option value="business">Business</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <label for="message">Message</label>
+            <textarea class="u-full-width" placeholder="Hi Robin …" id="message" name="message"></textarea>
+            <input class="button button-styled button-primary u-full-width" type="submit" value="Send">
+        </form>
+    </div>
+</div>
+
+<div id="footer">
+    <h6>${text.footer} - site generated with <a href="https://github.com/codingchili/sta-mina">sta-mina</a>.</h6>
+</div>
 </body>
 </html>

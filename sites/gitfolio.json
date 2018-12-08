@@ -6,8 +6,8 @@
   },
   "theme": {
     "from": "#323232",
-    "to": "#00b8d4",
-    "accent": "#FF9800"
+    "to": "#75009e",
+    "accent": "#b700b0"
   },
   "text": {
     "heading": "Zapperfly Assembler",
