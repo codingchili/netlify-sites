@@ -36,7 +36,7 @@
         }
 
         #content {
-            animation: fadein 0.8s;
+            /*animation: fadein 0.8s;*/
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -44,10 +44,10 @@
 
         @keyframes fadein {
             from {
-                opacity: 0;
+                opacity: 0.0;
             }
             to {
-                opacity: 1;
+                opacity: 1.0;
             }
         }
 
@@ -107,6 +107,7 @@
         .menu {
             background-image: linear-gradient(to right, ${theme.from}, ${theme.to});
             width: 100%;
+            animation: fadein 0.8s ease-in;
         }
 
         #footer {
@@ -139,6 +140,7 @@
             color: #fff;
             display: flex;
             justify-content: center;
+            animation: fadein 0.6s ease-in 1;
 
             background: linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
             linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
@@ -188,10 +190,19 @@
         }
 
         .project {
+            opacity: 0;
             width: 300px;
             height: 564px;
             position: relative;
+            animation: fadein 0.3s ease-in 1;
+            animation-fill-mode: forwards;
         }
+
+        ${text.projects.map((item, index) =>`
+        .project:nth-of-type(${index + 2}) {
+            animation-delay: ${index * 0.16}s;
+        }
+        `).join('')}
 
         .project-links {
             text-align: center;
@@ -213,6 +224,7 @@
         .project-filter {
             width: 100%;
             text-align: center;
+            animation: fadein 0.8s ease-in 1;
         }
 
         .project-tags {
@@ -234,6 +246,7 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 128px;
+            animation: fadein 0.8s ease-in 1;
         }
 
 
@@ -263,7 +276,9 @@
                         visible = tag.innerText.includes(query) || visible;
                     }
                 }
+                project.style.animation = 'unset';
                 project.style.display = visible ? 'block' : 'none';
+                project.style.opacity = '1.0';
             })
         }
 
