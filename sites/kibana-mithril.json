@@ -60,7 +60,7 @@
     "linkedin": "rduda"
   },
   "external": {
-    "banner": "https://raw.githubusercontent.com/codingchili/kibana-mithril/master/key-setup.png",
+    "banner": "img/mithril.png",
     "youtube": "https://www.youtube.com/embed/vvUdpPQhBjk"
   }
 }
