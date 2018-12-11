@@ -273,8 +273,8 @@
                 } else {
                     let tags = project.querySelector('.project-tags').children;
 
-                    for (let tag of tags) {
-                        visible = tag.innerText.includes(query) || visible;
+                    for (let i = 0; i < tags.length; i++) {
+                        visible = tags[i].innerText.includes(query) || visible;
                     }
                 }
                 project.style.animation = 'unset';
