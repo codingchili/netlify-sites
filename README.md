@@ -10,3 +10,15 @@ Deployed websites
 | [Ethereum Ingest](https://ethereum-ingest.com/)|Ethereum blockchain import utility.|
 | [Kibana Mithril](https://kibana-mithril.com/)|Security for kibana dashboards.|
 | [Excelastic](https://excelastic.com/)|Import utility for Elasticsearch.|
+
+### Building
+
+Generates all sites
+```
+npm install -g static-mina && stamina
+```
+
+alternatively,
+```
+stamina --name <project>
+```
