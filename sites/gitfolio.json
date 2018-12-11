@@ -96,7 +96,7 @@
       {
         "name": "Excelastic",
         "description": "Excelastic is a web interface and commandline utility to load data into ElasticSearch. It supports xlsx/xls and CSV files and focuses on ease of use.",
-        "image": "img/excelastic.webp",
+        "image": "img/excelastic.jpg",
         "tags": [
           "elasticsearch",
           "vert.x",
@@ -128,7 +128,7 @@
       {
         "name": "Ethereum Ingest",
         "description": "Ethereum ingest is an ingest utility capable of importing events from the Ethereum blockchain into ElasticSearch, MongoDB, Hazelcast and CQEngine.",
-        "image": "img/eth-ingest.webp",
+        "image": "img/eth-ingest.jpg",
         "tags": [
           "elasticsearch",
           "hazelcast",
@@ -360,7 +360,7 @@
         ]
       }
     ],
-    "footer": "&copy Robin Duda 2018"
+    "footer": "&copy; Robin Duda 2018"
   },
   "contact": {
     "enabled": true,
