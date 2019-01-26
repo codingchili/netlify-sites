@@ -60,9 +60,19 @@
         ],
         "links": [
           {
+            "href": "https://enigmatic-mouse.com/",
+            "icon": "fas fa-link",
+            "alt": "website"
+          },
+          {
             "href": "https://github.com/codingchili/enigmatic-mouse",
             "icon": "fab fa-github",
             "alt": "github"
+          },
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.codingchili.mouse.enigma",
+            "icon": "fab fa-google-play",
+            "alt": "google play"
           }
         ]
       },
@@ -360,7 +370,7 @@
         ]
       }
     ],
-    "footer": "&copy; Robin Duda 2018"
+    "footer": "&copy; Robin Duda 2019"
   },
   "contact": {
     "enabled": true,

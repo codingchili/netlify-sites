@@ -6,8 +6,8 @@
     <meta name="theme-color" content="${theme.to}">
     <meta name="description" content="${seo.description}">
 
-    <link rel="stylesheet" href="css/skeleton.css" as="style"/>
-    <link rel="stylesheet" href="css/fontawesome-all.css" as="style"/>
+    <link rel="preload" href="css/skeleton.css" as="style" onload="this.rel='stylesheet'"/>
+    <link rel="preload" href="css/fontawesome-all.css" as="style" onload="this.rel='stylesheet'"/>
     <link rel="shortcut icon" href="../favicon.ico"/>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=${seo.analytics}"></script>
@@ -273,8 +273,8 @@
                 } else {
                     let tags = project.querySelector('.project-tags').children;
 
-                    for (let i = 0; i < tags.length; i++) {
-                        visible = tags[i].innerText.includes(query) || visible;
+                    for (let tag of tags) {
+                        visible = tag.innerText.includes(query) || visible;
                     }
                 }
                 project.style.animation = 'unset';

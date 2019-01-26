@@ -29,6 +29,12 @@
       "data": "sites/kibana-mithril.json",
       "dynamic": false,
       "web": "./web"
+    },
+    {
+      "template": "templates/git-project.html",
+      "data": "sites/mouse.json",
+      "dynamic": false,
+      "web": "./web"
     }
   ]
 }
