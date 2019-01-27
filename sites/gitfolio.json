@@ -6,8 +6,8 @@
   },
   "theme": {
     "from": "#323232",
-    "to": "#75009e",
-    "accent": "#b700b0"
+    "to": "#dadada",
+    "accent": "#e600ff"
   },
   "text": {
     "whoami": {
@@ -50,7 +50,7 @@
         ]
       },
       {
-        "name": "Mouse Enigma",
+        "name": "Enigmatic Mouse",
         "description": "An Android password manager with support for using your fingerprint as biometric authentication. Passwords are hashed with Scrypt and encrypted with a AES256 key stored in the trusted execution environment.",
         "image": "img/mouse_enigma.jpg",
         "tags": [
@@ -377,7 +377,8 @@
     "github_repository": "zapperfly-asm",
     "github_user": "codingchili",
     "youtube_channel": "user/MrChilimannen/videos",
-    "linkedin": "rduda"
+    "linkedin": "rduda",
+    "patreon": "codingchili"
   },
   "external": {
   }

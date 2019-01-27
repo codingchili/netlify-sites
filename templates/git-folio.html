@@ -137,17 +137,11 @@
             margin-left: auto;
             margin-right: auto;
             width: 100%;
-            color: #fff;
             display: flex;
             justify-content: center;
             animation: fadein 0.6s ease-in 1;
-
-            background: linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
-            linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
-            linear-gradient(315deg, black 25%, transparent 25%),
-            linear-gradient(45deg, black 25%, transparent 25%);
-            background-size: 2em 2em;
-            background-color: #232323;
+            background-color: #fff;
+            color: #000;
         }
 
         #whoami-irl {
@@ -300,6 +294,9 @@
     <a href="https://www.linkedin.com/in/${contact.linkedin}" rel="noopener noreferrer" target="_blank">
         <i class="fab fa-linkedin menu-item" alt="linkedin"></i>
     </a>
+    <a href="https://www.patreon.com/${contact.patreon}" rel="noopener noreferrer" target="_blank">
+        <i class="fab fa-patreon menu-item" alt="patreon"></i>
+    </a>
 
 </div>
 
@@ -310,9 +307,9 @@
 
         <div>
             <span id="whoami-irl">${text.whoami.irl}</span>
-            <a href="https://s.gravatar.com/avatar/d2f060eb8b0f4a895677cfc0d13225fc?size=496&default=retro">
+            <a href="https://en.gravatar.com/userimage/151692111/6880ad24ebfbaad4bce2d78443262b99.png?size=496">
                 <img id="image"
-                     src="https://s.gravatar.com/avatar/d2f060eb8b0f4a895677cfc0d13225fc?size=496&default=retro"/>
+                     src="https://en.gravatar.com/userimage/151692111/6880ad24ebfbaad4bce2d78443262b99.png?size=496"/>
             </a>
             <span id="whoami-online">@${text.whoami.online}</span>
         </div>
