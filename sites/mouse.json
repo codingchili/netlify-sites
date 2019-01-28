@@ -46,7 +46,7 @@
     "instructions": {
       "enabled": true,
       "header": "Installation",
-      "start": "Instructions for building and installing can be found in the official repository. Following the link at the <a href='javascript:scrollTo(0, 0);'>top</a> of the page. The application is also available for installation from the Google Play store with a small distribution fee. If you want to use the application for free downloaded it from our GitHub releases.",
+      "start": "Instructions for building and installing can be found in the official repository. Following the link at the <a href='javascript:scrollTo(0, 0);'>top</a> of the page. The application is also available for installation from the Google Play store with a small distribution fee. If you want to use the application for free download it from our GitHub releases.",
       "end": "",
       "google_play": {
         "enabled": true,
