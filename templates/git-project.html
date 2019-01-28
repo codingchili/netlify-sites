@@ -290,6 +290,14 @@
         margin: 0;
     }
 
+    #google-play {
+        text-align: center;
+    }
+
+    #play-badge {
+        max-width: 100%;
+    }
+
 </style>
 <script>
     function youtube_async() {
@@ -413,6 +421,11 @@
                 </button>
             </a>
             <p></p>
+        </div>
+
+        <div ${text.instructions.google_play.enabled ? '' : 'hidden'} id="google-play">
+            <a href='https://play.google.com/store/apps/details?id=${text.instructions.google_play.id}'><img id="play-badge" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+            <p>${text.instructions.google_play.subheading}</p>
         </div>
     </div>
 

@@ -72,6 +72,9 @@
       "staging": {
         "enabled": false,
         "url": "https://github.com/"
+      },
+      "google_play": {
+        "enabled": false
       }
     },
     "footer": "&copy; Robin Duda 2019"
