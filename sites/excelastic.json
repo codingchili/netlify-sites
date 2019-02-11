@@ -6,9 +6,10 @@
   },
   "theme": {
     "backup": "#15569f",
-    "from": "#fff",
-    "to": "#9954bb",
-    "accent": "#15569f"
+    "from": "#ff7b7b",
+    "to": "#7a0098",
+    "accent": "#2780e3",
+    "menu": "#424242"
   },
   "text": {
     "heading": "Excelastic",
@@ -87,7 +88,7 @@
     "linkedin": "rduda"
   },
   "external": {
-    "banner": "img/excelastic.jpg",
+    "banner": "img/excelastic.png",
     "youtube": "https://www.youtube.com/embed/x2KuhN1RZ4s"
   }
 }

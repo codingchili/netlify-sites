@@ -106,7 +106,7 @@
       {
         "name": "Excelastic",
         "description": "Excelastic is a web interface and commandline utility to load data into ElasticSearch. It supports xlsx/xls and CSV files and focuses on ease of use.",
-        "image": "img/excelastic.jpg",
+        "image": "img/excelastic.png",
         "tags": [
           "elasticsearch",
           "vert.x",
