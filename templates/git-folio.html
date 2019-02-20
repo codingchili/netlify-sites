@@ -97,6 +97,7 @@
         a, a:link, a:visited {
             text-decoration: none;
             color: ${theme.accent};
+            text-shadow: 1px 1px #00000032;
         }
 
         a:hover, a:active {
@@ -240,10 +241,14 @@
             max-width: 768px;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 128px;
+            margin-top: 46px;
             animation: fadein 0.8s ease-in 1;
         }
 
+        #donate {
+            text-align: center;
+            margin: 46px;
+        }
 
     </style>
     <script>
@@ -294,10 +299,6 @@
     <a href="https://www.linkedin.com/in/${contact.linkedin}" rel="noopener noreferrer" target="_blank">
         <i class="fab fa-linkedin menu-item" alt="linkedin"></i>
     </a>
-    <a href="https://www.patreon.com/${contact.patreon}" rel="noopener noreferrer" target="_blank">
-        <i class="fab fa-patreon menu-item" alt="patreon"></i>
-    </a>
-
 </div>
 
 <div id="content">
@@ -392,6 +393,12 @@
             <input class="button button-styled button-primary u-full-width" type="submit" value="Send">
         </form>
     </div>
+</div>
+
+<div id="donate" ${contact.donations.enabled ? '' : 'hidden'}>
+    <a href="${contact.donations.coinbase}">
+        <img src="https://img.shields.io/badge/donate-%CE%9ETH%20/%20%C9%83TC-ff00cc.svg?style=flat-square&logo=ethereum">
+    </a>
 </div>
 
 <div id="footer">

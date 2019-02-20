@@ -1,8 +1,8 @@
 {
   "seo": {
     "analytics": "UA-77574715-7",
-    "title": "Robin Duda - The @codingchili portfolio.",
-    "description": "Robin Duda is a software developer working on a lot of open source projects with friendly licensing."
+    "title": "Robin Duda - a programmers portfolio (codingchili)",
+    "description": "Robin Duda is a software developer working on multiple open source projects with friendly MIT licensing. All projects are available under the GitHub user codingchili."
   },
   "theme": {
     "from": "#323232",
@@ -261,7 +261,7 @@
         ],
         "links": [
           {
-            "href": "https://github.com/codingchili/static-mina",
+            "href": "https://github.com/codingchili/sta-mina",
             "icon": "fab fa-github",
             "alt": "github"
           },
@@ -378,8 +378,9 @@
     "github_user": "codingchili",
     "youtube_channel": "RobinDuda/videos",
     "linkedin": "rduda",
-    "patreon": "codingchili"
-  },
-  "external": {
+    "donations": {
+  	  "enabled": true,
+  	  "coinbase": "https://commerce.coinbase.com/checkout/673e693e-be6d-4583-9791-611da87861e3"
+    }
   }
 }
