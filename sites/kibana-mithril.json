@@ -1,8 +1,8 @@
 {
   "seo": {
 	"analytics": "UA-77574715-5",
-    "title": "Kibana security plugin to protect your dashboards",
-    "description": "A plugin for Kibana that protects your dashboards and configuration with a username and password. Supports authentication using 2-Factor authentication with TOTP tokens. Login integrations for LDAP, MongoDB and on-disk JSON files. Passwords are protected with Argon2 - the lastes password hashing contest winner."
+    "title": "Kibana Mithril - A security plugin to protect your dashboards!",
+    "description": "A plugin for Kibana that protects your dashboards with a login. Login integrations for LDAP, MongoDB and on-disk JSON files. Supports authentication using 2-Factor authentication with TOTP tokens. Passwords are protected with Argon2 - the lastes password hashing contest winner."
   },
   "theme": {
     "from": "#fff",
