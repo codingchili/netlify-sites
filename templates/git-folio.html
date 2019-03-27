@@ -32,7 +32,9 @@
             margin: 0;
             color: #fff;
             background-image: linear-gradient(to right, ${theme.from}, ${theme.to});
-            mix-blend-mode: multiply;
+
+            /* does not work on some mobile devices: causes all content to vanish. */
+            /*mix-blend-mode: multiply;*/
         }
 
         #content {
