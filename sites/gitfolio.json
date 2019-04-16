@@ -138,7 +138,7 @@
       {
         "name": "Ethereum Ingest",
         "description": "Ethereum ingest is an ingest utility capable of importing events from the Ethereum blockchain into ElasticSearch, MongoDB, Hazelcast and CQEngine.",
-        "image": "img/eth-ingest.jpg",
+        "image": "img/eth-ingest.png",
         "tags": [
           "elasticsearch",
           "hazelcast",

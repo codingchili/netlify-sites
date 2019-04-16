@@ -1,6 +1,6 @@
 {
   "seo": {
-	"analytics": "UA-77574715-4",
+    "analytics": "UA-77574715-4",
     "title": "Import excel and CSV files into ElasticSearch - with Exelastic",
     "description": "Easy to use web application and commandline based file importer for ElasticSearch. Free to use and easy to set up, compatible with version 5,6 and 7. Uses batch indexing with the high level REST API to support multiple versions and transition to newer versions faster."
   },
@@ -14,61 +14,77 @@
   "text": {
     "heading": "Excelastic",
     "subheading": "Import utility for ElasticSearch for excel and CSV files.",
-    "hints": [{
-      "icon": "fas fa-desktop",
-      "title": "Accessible",
-      "content": "With an user friendly web interface employees in sales/management can use it too! If you need authentication simply setup a reverse proxy."
-    },
-    {
-      "icon": "fas fa-sync",
-      "title": "Up-to-date",
-      "content": "We aim to always stay up to date with the latest elasticsearch version, bringing you the greatest performance and latest fixes!"
-    },{
-      "icon": "fas fa-terminal",
-      "title": "Commandline",
-      "content": "Using the commandline mode in Excelastic you are able to automate tasks using your favorite scripting language."
-     }],
-	 "features": {
-        "enabled": true,
-        "licenses": [
-            "Free"
-        ],
-        "list": [{
-                "name":"XLS/XLSX import",
-                "supported": ["check"]
-            },
-            {
-                "name":"CSV import",
-                "supported": ["check"]
-            },
-            {
-                "name": "Web interface",
-                "supported": ["check"]
-            },
-            {
-                "name": "Terminal import",
-                "supported": ["check"]
-            },
-            {
-                "name": "JSONL import",
-                "supported": ["clock"]
-            },
-            {
-                "name": "Authentication",
-                "supported": ["times"]
-            }
-        ],
-        "content": "Excelastic uses the REST-API with the high level REST client. This allows us to more quickly adapt to later versions. When importing we are using the batch indexing API to maximize throughput. If you need additional features like HTTPS and authentication we recommend that you setup a reverse proxy."
+    "hints": [
+      {
+        "icon": "fas fa-desktop",
+        "title": "Accessible",
+        "content": "With an user friendly web interface employees in sales/management can use it too! If you need authentication simply setup a reverse proxy."
+      },
+      {
+        "icon": "fas fa-sync",
+        "title": "Up-to-date",
+        "content": "We aim to always stay up to date with the latest elasticsearch version, bringing you the greatest performance and latest fixes!"
+      },
+      {
+        "icon": "fas fa-terminal",
+        "title": "Commandline",
+        "content": "Using the commandline mode in Excelastic you are able to automate tasks using your favorite scripting language."
+      }
+    ],
+    "features": {
+      "enabled": true,
+      "licenses": [
+        "Free"
+      ],
+      "list": [
+        {
+          "name": "XLS/XLSX import",
+          "supported": [
+            "check"
+          ]
+        },
+        {
+          "name": "CSV import",
+          "supported": [
+            "check"
+          ]
+        },
+        {
+          "name": "Web interface",
+          "supported": [
+            "check"
+          ]
+        },
+        {
+          "name": "Terminal import",
+          "supported": [
+            "check"
+          ]
+        },
+        {
+          "name": "JSONL import",
+          "supported": [
+            "clock"
+          ]
+        },
+        {
+          "name": "Authentication",
+          "supported": [
+            "times"
+          ]
+        }
+      ],
+      "content": "Excelastic uses the REST-API with the high level REST client. This allows us to more quickly adapt to later versions. When importing we are using the batch indexing API to maximize throughput. If you need additional features like HTTPS and authentication we recommend that you setup a reverse proxy."
     },
     "instructions": {
-        "enabled": true,
-        "header": "Setup",
-        "start": "Start the application with,",
-        "command": "java -jar excelastic.jar",
-        "end": "This starts the server with the management website enabled. Its also possible to import straight from the command line.",
+      "enabled": true,
+      "header": "Setup",
+      "start": "Start the application with,",
+      "command": "java -jar excelastic.jar",
+      "end": "This starts the server with the management website enabled. Its also possible to import straight from the command line.",
       "docker": {
         "enabled": true,
-        "hub": "https://hub.docker.com/r/codingchili/excelastic/" 
+        "hub": "https://hub.docker.com/r/codingchili/excelastic/"
       },
       "staging": {
         "enabled": false,
@@ -77,6 +93,11 @@
       "google_play": {
         "enabled": false
       }
+    },
+    "sponsored": {
+      "enabled": true,
+      "jetbrains": true,
+      "jprofiler": true
     },
     "footer": "&copy; Robin Duda 2019"
   },

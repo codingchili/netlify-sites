@@ -1,6 +1,6 @@
 {
   "seo": {
-	"analytics": "UA-77574715-5",
+    "analytics": "UA-77574715-5",
     "title": "Kibana Mithril - A security plugin to protect your dashboards!",
     "description": "A plugin for Kibana that protects your dashboards with a login. Login integrations for LDAP, MongoDB and on-disk JSON files. Supports authentication using 2-Factor authentication with TOTP tokens. Passwords are protected with Argon2 - the lastes password hashing contest winner."
   },
@@ -13,30 +13,74 @@
   "text": {
     "heading": "Kibana Mithril plugin",
     "subheading": "Protect your Kibana instances with Mithril. Two factor authentication and LDAP integration.",
-    "hints": [{
-      "icon": "fas fa-shield-alt",
-      "title": "Secure",
-      "content": "This plugin secures your dashboard and data. An authentication scheme is set up on the existing Hapi router which uses HMAC JWT's. Passwords are hashed using Argon2, the latest winner of the password hashing contest - newer than PBKDF2, Bcrypt and Scrypt!"
-    },
-    {
-      "icon": "fas fa-database",
-      "title": "Integrated",
-      "content": "Store your users in a JSON file on disk, no requirements to setup a separate database! Use an LDAP database if you are on a domain, or even a MongoDB database if you feel like it. This plugin supports it all!"
-    }],
+    "hints": [
+      {
+        "icon": "fas fa-shield-alt",
+        "title": "Secure",
+        "content": "This plugin secures your dashboard and data. An authentication scheme is set up on the existing Hapi router which uses HMAC JWT's. Passwords are hashed using Argon2, the latest winner of the password hashing contest - newer than PBKDF2, Bcrypt and Scrypt!"
+      },
+      {
+        "icon": "fas fa-database",
+        "title": "Integrated",
+        "content": "Store your users in a JSON file on disk, no requirements to setup a separate database! Use an LDAP database if you are on a domain, or even a MongoDB database if you feel like it. This plugin supports it all!"
+      }
+    ],
     "features": {
-        "enabled": true,
-        "licenses": ["Supported"],
-        "list": [
-            {"name": "2-Factor authentication", "supported": ["check"]},
-            {"name": "Key setup with QR code", "supported": ["check"]},
-            {"name": "LDAP login integration", "supported": ["check"]},
-            {"name": "MongoDB user storage", "supported": ["check"]},
-            {"name": "File-based user storage", "supported": ["check"]},
-            {"name": "Argon2 hashed passwords", "supported": ["check"]},
-            {"name": "Per-dashboard authentication", "supported": ["times"]},
-            {"name": "Role-based access control", "supported": ["times"]}
-        ],
-        "content": "We recommend setting up TLS and authentication for ElasticSearch and Kibana. If your ElasticSearch server is publicly available then this plugin will only protect your dashboard configuration in Kibana, not any data."
+      "enabled": true,
+      "licenses": [
+        "Supported"
+      ],
+      "list": [
+        {
+          "name": "2-Factor authentication",
+          "supported": [
+            "check"
+          ]
+        },
+        {
+          "name": "Key setup with QR code",
+          "supported": [
+            "check"
+          ]
+        },
+        {
+          "name": "LDAP login integration",
+          "supported": [
+            "check"
+          ]
+        },
+        {
+          "name": "MongoDB user storage",
+          "supported": [
+            "check"
+          ]
+        },
+        {
+          "name": "File-based user storage",
+          "supported": [
+            "check"
+          ]
+        },
+        {
+          "name": "Argon2 hashed passwords",
+          "supported": [
+            "check"
+          ]
+        },
+        {
+          "name": "Per-dashboard authentication",
+          "supported": [
+            "times"
+          ]
+        },
+        {
+          "name": "Role-based access control",
+          "supported": [
+            "times"
+          ]
+        }
+      ],
+      "content": "We recommend setting up TLS and authentication for ElasticSearch and Kibana. If your ElasticSearch server is publicly available then this plugin will only protect your dashboard configuration in Kibana, not any data."
     },
     "instructions": {
       "enabled": true,
@@ -52,6 +96,9 @@
       "google_play": {
         "enabled": false
       }
+    },
+    "sponsored": {
+      "enabled": false
     },
     "footer": "&copy; Robin Duda 2019"
   },

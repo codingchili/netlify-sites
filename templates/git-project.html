@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>${seo.title}</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes"> 
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
     <meta name="theme-color" content="${theme.to}">
     <meta name="description" content="${seo.description}">
 
@@ -17,10 +17,10 @@
 
 		function gtag() {
 			dataLayer.push(arguments);
-		}   
+		}
 
 		gtag('js', new Date());
-		gtag('config', '${seo.analytics}'); 
+		gtag('config', '${seo.analytics}');
 	</script>
 
 <style>
@@ -175,7 +175,7 @@
         margin-bottom: 32px;
         max-width: 276px;
     }
-    
+
     @media (min-width: 1024px) {
         .product-image {
             position: absolute;
@@ -228,7 +228,7 @@
           margin-top: 16vh;
           margin-bottom: 16vh;
           margin-right: auto;
-          margin-left: auto; 
+          margin-left: auto;
     }
 
     .video-wrapper {
@@ -267,10 +267,7 @@
     }
 
     .form-padding {
-    	padding-left: 24px;
-    	padding-right: 24px;
-    	padding-top: 24px;
-    	padding-bottom: 12px;
+        padding: 24px 24px 12px;
     }
 
     #footer {
@@ -299,6 +296,10 @@
 
     #play-badge {
         max-width: 100%;
+    }
+
+    .support-logo {
+        text-align: center;
     }
 
 </style>
@@ -365,7 +366,7 @@
 
     <div class="video-section">
         <div class="video-wrapper">
-            <iframe id="video-frame" src="about:blank" class="video-object" 
+            <iframe id="video-frame" src="about:blank" class="video-object"
                     frameborder="0" allowfullscreen="allowfullscreen" title="youtube video">
             </iframe>
         </div>
@@ -407,7 +408,7 @@
 
         <div ${text.instructions.docker.enabled ? '' : 'hidden'}>
             <h5>Docker</h5>
-			
+
 			<a href="${text.instructions.docker.hub}" class="docker-icon text-center">
 				<i class="menu-item fab fa-docker"></i>
 			</a>
@@ -432,6 +433,33 @@
         </div>
     </div>
 
+    <div id="sponsored" ${text.sponsored.enabled ? '' : 'hidden'} class="card">
+        <h5>Contributions</h5>
+
+        <div id="jprofiler" ${text.sponsored.jprofiler ? '' : 'hidden'} class="support-logo">
+            <p>
+                Thanks to
+                <a href="https://www.ej-technologies.com/products/jprofiler/overview.html" rel="nofollow">jProfiler</a>
+                for providing open source licenses!
+
+            </p>
+            <a href="https://www.ej-technologies.com/products/jprofiler/overview.html" rel="nofollow">
+                <img src="img/jprofiler_logo.png" alt="https://www.ej-technologies.com/products/jprofiler/overview.html">
+            </a>
+        </div>
+
+        <div id="jetbrains" ${text.sponsored.jetbrains ? '' : 'hidden'} class="support-logo">
+            <p>
+                Thanks to
+                <a href="https://jetbrains.com/" rel="nofollow">JetBrains</a>
+                for providing open source licenses!
+            </p>
+            <a href="https://jetbrains.com/" rel="nofollow">
+                <img src="img/jetbrains_logo.png" alt="https://jetbrains.com/">
+            </a>
+        </div>
+    </div>
+
     <div id="contact-form" class="card" ${contact.enabled ? '' : 'hidden'}>
     	<div class="form-padding">
     		<p>Please contact me if you have any questions, feedback, feature requests.. or anything else really. </p>
@@ -442,7 +470,7 @@
 			      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="email" name="email">
 			    </div>
 			    <div class="six columns">
-			      <label for="contact_Type">Reason for contacting</label>
+			      <label for="type">Reason for contacting</label>
 			      <select class="u-full-width" id="type" name="type">
 			      	<option value="feedback">Feature request or Feedback</option>
 			        <option value="bugs">Bug report</option>
