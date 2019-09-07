@@ -173,9 +173,6 @@ text:
         - cqengine
         - chili-core
       links:
-        - href: https://flashcardsalligator.com/
-          icon: fas fa-link
-          alt: website
         - href: https://github.com/codingchili/flashcards-webapp
           icon: fab fa-github
           alt: github
