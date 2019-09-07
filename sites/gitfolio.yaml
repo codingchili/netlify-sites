@@ -29,7 +29,7 @@ text:
         - hazelcast
         - vert.x
         - polymer
-        - chili-core
+        - chili
       links:
         - href: https://zapperfly-asm.com/
           icon: fas fa-link
@@ -115,7 +115,7 @@ text:
         - vert.x
         - javafx
         - ethereum
-        - chili-core
+        - chili
       links:
         - href: https://ethereum-ingest.com/
           icon: fas fa-link
@@ -154,8 +154,7 @@ text:
         - python
         - asyncio
         - aiohttp
-        - google
-        - raspberry
+        - pi
       links:
         - href: https://github.com/codingchili/unicorn-analytics
           icon: fab fa-github
@@ -171,7 +170,7 @@ text:
         - vert.x
         - polymer
         - cqengine
-        - chili-core
+        - chili
       links:
         - href: https://github.com/codingchili/flashcards-webapp
           icon: fab fa-github
@@ -220,9 +219,11 @@ text:
         pixijs. The backend is built with microservices and my chili-core framework.
       image: img/extgame.png
       tags:
+        - cqengine
+        - hazelcast
         - javascript
         - vert.x
-        - chili-core
+        - chili
         - pixijs
         - polymer
       links:
@@ -238,7 +239,7 @@ text:
         - python
         - asyncio
         - aiohttp
-        - raspberry
+        - pi
         - ethereum
       links:
         - href: https://github.com/codingchili/pi-zero-ethermeter

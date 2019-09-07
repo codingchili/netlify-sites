@@ -270,6 +270,8 @@
         .project-tags {
             text-align: center;
             margin-top: 8px;
+            height: 48px;
+            line-height: 1.225;
         }
 
         .project-title {
@@ -279,6 +281,7 @@
 
         .project-text {
             line-height: 1.4;
+            padding-top: 0;
         }
 
         .filter-clear {
@@ -397,8 +400,8 @@
                         `).join('')}
                     </div>
 
-                    <div class="project-text">
-                        <p>
+                    <div>
+                        <p class="project-text">
                             ”${project.description}”
                         </p>
                     </div>
