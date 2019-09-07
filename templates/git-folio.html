@@ -37,6 +37,18 @@
             /*mix-blend-mode: multiply;*/
         }
 
+        ul {
+            margin-left: 32px;
+        }
+
+        li {
+            opacity: 0.86;
+        }
+
+        h5 {
+            opacity: 0.86;
+        }
+
         ::selection {
             background: ${theme.accent};
             color: #fffffffe;
@@ -153,6 +165,7 @@
             color: #323232;
             margin: 12px;
             padding: 12px;
+            max-width: 768px;
         }
 
         #whoami {
@@ -293,11 +306,17 @@
             margin-left: 4px;
         }
 
-        #contact-form {
-            max-width: 768px;
+        #experience {
             margin-left: auto;
             margin-right: auto;
-            margin-top: 46px;
+            margin-top: 128px;
+            animation: fadein 0.8s ease-in 1;
+        }
+
+        #contact-form {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 128px;
             animation: fadein 0.8s ease-in 1;
         }
 
@@ -415,6 +434,32 @@
                     </div>
                 </div>
         `).join('')}
+    </div>
+</div>
+
+<div id="experience" class="card">
+    <div id="platforms">
+        <h5>Platforms</h5>
+        <ul>
+            ${text.experience.platforms.list.map(platform => `<li>${platform}</li>`).join('')}
+        </ul>
+        <p>${text.experience.platforms.summary}</p>
+    </div>
+
+    <div id="skills">
+        <h5>Skills</h5>
+        <ul>
+            ${text.experience.skills.list.map(skill => `<li>${skill }</li>`).join('')}
+        </ul>
+        <p>${text.experience.skills.summary}</p>
+    </div>
+
+    <div id="libraries">
+        <h5>Libraries & Frameworks</h5>
+        <ul>
+            ${text.experience.libraries.list.map(library => `<li>${library}</li>`).join('')}
+        </ul>
+        <p>${text.experience.libraries.summary}</p>
     </div>
 </div>
 

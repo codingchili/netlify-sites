@@ -13,13 +13,15 @@ text:
   whoami:
     irl: Robin Duda
     online: codingchili
-    description: Software developer working on a lot of open source projects with
-      friendly licensing. I'm interested in a lot of things but is currently working
-      with Vert.x, Hazelcast, ElasticSearch, Web Components, Polymer, CQEngine, Web
-      app security, aiohttp/asyncio and even some Android.Mostly using Java, Python
-      and JavaScript for web development but trying to learn some Kotlin on Android
-      and Vyper for the EVM. I like microservices and Docker and dislike application
-      servers and object relational mappers.
+    description:
+      Software developer and security enthusiast with an interest in networks.
+      Working on open source projects with friendly licensing in my spare time, listed
+      here are some of the more useful projects. Some of which build on my own frameworks,
+      such as the backend framework 'chili-core' or 'static-mina' which is a static
+      site generator. I love to work with new technology and awesome libraries.
+      <br><br>
+      Prefer reactive microservices, Docker and NoSQL, disinterested in application servers and
+      object relational mappers :)
   projects:
     - name: Zapperfly Assembler
       description: Zapperfly assembler is a clustered build server that aims to be small
@@ -267,6 +269,51 @@ text:
         - href: https://www.youtube.com/watch?v=86SiHCIcKv0
           icon: fab fa-youtube
           alt: youtube
+  experience:
+    platforms:
+      list:
+        - Frontend development
+        - Backend development
+        - Android
+        - Windows/Unix desktop
+      summary:
+        Mostly web development with responsive/progressive web applications that works well on mobile.
+        A bit of desktop and native Android.
+    skills:
+      list:
+        - Programming
+        - Networking
+        - Security
+        - Java
+        - Microservices
+        - JavaScript
+        - Web development
+        - Git
+        - Docker
+        - Python
+        - Jenkins
+      summary:
+        These are my core skills, always looking to improve. Learning a bit of Kotlin and Vyper on the side,
+        doing networking and security labs, reading and trying new things!
+    libraries:
+      list:
+        - Vert.x
+        - Hazelcast
+        - Polymer
+        - ElasticSearch
+        - REST
+        - Web3j
+        - MongoDB
+        - NodeJS
+        - CQEngine
+        - aiohttp/asyncio
+        - Jackson
+        - Kryo/reflectasm
+        - Web components
+      summary:
+        These are the libraries & frameworks I frequently use and enjoy. I do a bit of Java EE as well, with
+        JAX-RS/JAX-WS and Wicket on the frontend. They're not on the list because I'm much more productive
+        and enjoy working more with the given alternatives.
   footer: "&copy; Robin Duda 2019"
 contact:
   enabled: true
