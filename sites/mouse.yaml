@@ -1,0 +1,102 @@
+---
+seo:
+  analytics: UA-77574715-8
+  title: Password Manager for Android - Enigmatic Mouse
+  description: The Enigmatic Mouse will keep your secrets safe in this password manager
+    for Android with fingerprints support. Free open source software!
+theme:
+  from: "#7b1fa2"
+  to: "#0097a7"
+  accent: "#e65100"
+text:
+  heading: Enigmatic Mouse
+  subheading: Keeps silent about your passwords.
+  hints:
+    - icon: fas fa-shield-alt
+      title: Secure
+      content: Security is the main focus of this application. We employ Scrypt with
+        a high iteration count, use the trusted execution environment in Android and
+        encrypt everything with AES256!
+    - icon: far fa-money-bill-alt
+      title: Free
+      content: Free and open source software. Free to use, alter and redistribute. Users
+        are encouraged to take a look at the source code and even build the application
+        themselves for maximum security.
+    - icon: fas fa-bell-slash
+      title: No-Ads
+      content: It's finally here, a free application that does not include any forms
+        of advertisements! No pop-ups, no flashing gifs, no in your face videos, just
+        software.
+  features:
+    enabled: true
+    licenses:
+      - Supported
+    list:
+      - name: fingerprint security and strong encryption.
+        supported:
+          - check
+      - name: encrypted credential storage.
+        supported:
+          - check
+      - name: icons for added websites.
+        supported:
+          - check
+      - name: copy password or display within application.
+        supported:
+          - check
+      - name: set favorites that sticky at the top.
+        supported:
+          - check
+      - name: checks for breaches against haveibeenpwned.
+        supported:
+          - check
+      - name: stores one time tokens (TOTP)
+        supported:
+          - clock
+      - name: import and export credentials
+        supported:
+          - clock
+      - name: login autofill for websites and apps
+        supported:
+          - clock
+      - name: credential cloud synchronization
+        supported:
+          - times
+    content: The Enigmatic Mouse attempts to be a modern and minimalistic password
+      manager. Support for cloud synchronization or backups will never be added due
+      to the inherent security issues. Rather a device-to-device import/export feature
+      is planned. Support for autofill is not implemented due to the complexity and
+      current lack of documentation associated. Users of the application is encouraged
+      to take part in development and even build the source code by themselves, as
+      this provides maximum security. The application is available free of charge
+      through our GitHub releases but not from the Google Play Store - we charge for
+      the distribution there.
+  instructions:
+    enabled: true
+    header: Installation
+    start: Instructions for building and installing can be found in the official repository.
+      Following the link at the <a href='javascript:scrollTo(0, 0);'>top</a> of the
+      page. The application is also available for installation from the Google Play
+      store with a small distribution fee. If you want to use the application for
+      free download it from our GitHub releases.
+    end: ''
+    google_play:
+      enabled: true
+      id: com.codingchili.mouse.enigma&pcampaignid=website
+      subheading: On sale for 100% off until 1st February.
+    docker:
+      enabled: false
+    staging:
+      enabled: false
+  sponsored:
+    enabled: false
+  footer: "&copy; Robin Duda 2019"
+contact:
+  enabled: true
+  github_repository: enigmatic-mouse
+  github_user: codingchili
+  youtube_channel: RobinDuda/videos
+  linkedin: rduda
+external:
+  banner: img/mouse_enigma.jpg
+  youtube: https://www.youtube.com/embed/CcIvlFmBL5w
