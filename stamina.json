@@ -2,7 +2,7 @@
   "sites": [
   	{
   		"template": "templates/git-folio.html",
-  		"data": "sites/gitfolio.json",
+  		"data": "sites/gitfolio.yaml",
   		"dynamic": false,
   		"web": "./web"
   	},

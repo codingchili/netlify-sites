@@ -99,7 +99,8 @@
         a, a:link, a:visited {
             text-decoration: none;
             color: ${theme.accent};
-            text-shadow: 1px 1px #00000032;
+            opacity: 0.86;
+            /*text-shadow: 1px 1px #00000032;*/
         }
 
         a:hover, a:active {
@@ -119,6 +120,7 @@
             color: #fff;
             margin-top: 32px;
             margin-bottom: 16px;
+            opacity: 0.86;
         }
 
         p, h1, h2, h3, h4, h5, h6 {
@@ -149,6 +151,8 @@
 
         #whoami-irl {
             display: block;
+            opacity: 0.66;
+            font-weight: 600;
         }
 
         @media screen and (max-width: 1060px) {
@@ -157,14 +161,22 @@
             }
         }
 
+        @media screen and (min-width: 1060px) {
+            #whoami-description {
+                margin-top: 18px;
+            }
+        }
+
         #whoami-description {
-            margin-top: 28px;
             margin-left: 32px;
             text-align: left;
+            line-height: 1.25;
         }
 
         #whoami-online {
             display: block;
+            font-style: italic;
+            opacity: 0.48;
         }
 
         #image {
@@ -190,10 +202,15 @@
             animation-delay: 0.2s;
             opacity: 0;
             width: 300px;
-            height: 564px;
+            height: 536px;
             position: relative;
             animation: fadein 0.26s ease-in 1;
             animation-fill-mode: forwards;
+        }
+
+        p, label {
+            opacity: 0.86;
+            color: #323232;
         }
 
         ${text.projects.map((item, index) =>`
@@ -230,6 +247,15 @@
             margin-top: 8px;
         }
 
+        .project-title {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .project-text {
+            line-height: 1.4;
+        }
+
         .filter-clear {
             font-size: 16px;
             min-width: unset;
@@ -257,8 +283,6 @@
         function filter(query) {
             let projects = document.getElementById('projects').querySelectorAll('.project');
             let header = document.getElementById('filter-header');
-
-            console.log(header);
 
             if (query === '*') {
                 header.innerText = 'Showing all projects';
@@ -295,7 +319,7 @@
     <a href="https://github.com/${contact.github_user}" rel="noopener noreferrer" target="_blank">
         <i class="fab fa-github menu-item" alt="github"></i>
     </a>
-    <a href="https://www.youtube.com/${contact.youtube_channel}">
+    <a href="https://www.youtube.com/${contact.youtube_channel}" rel="noopener noreferrer" target="_blank">
         <i class="fab fa-youtube menu-item" alt="youtube"></i>
     </a>
     <a href="https://www.linkedin.com/in/${contact.linkedin}" rel="noopener noreferrer" target="_blank">
@@ -318,7 +342,7 @@
         </div>
 
         <div id="whoami-description">
-            ${text.whoami.description}
+            <p>${text.whoami.description}</p>
         </div>
     </div>
 
@@ -328,7 +352,7 @@
         <div class="project-filter">
             <span id="filter-header">Showing all projects</span>
 
-            <a href="javascript:clear();" rel="noopener noreferrer" target="_blank">
+            <a href="javascript:clear();">
                 <i class="fas fa-times menu-item filter-clear" alt="clear filter"></i>
             </a>
         </div>
@@ -336,7 +360,7 @@
         ${text.projects.map(project => `
                 <div class="project card">
                     <div class="project-title">
-                        <h5>${project.name}</h5>
+                        <p>${project.name}</p>
                     </div>
                     <a href="${project.image}">
                         <img class="project-image" src="${project.image}">
