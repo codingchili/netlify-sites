@@ -44,6 +44,30 @@
 
     label {
     	font-weight: 200;
+        opacity: 0.64;
+    }
+
+    body::-webkit-scrollbar {
+        width: 0.4em;
+        opacity: 0.42;
+        background-color: ${theme.to};
+    }
+
+    body::-webkit-scrollbar-track {
+        background-color: #00000088;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: ${theme.accent};
+    }
+
+    p, span {
+        opacity: 0.86;
+    }
+
+    ::selection {
+        background: ${theme.accent};
+        color: #fffffffe;
     }
 
     #content {
@@ -102,6 +126,7 @@
     .heading {
         text-align: center;
         display: block;
+        opacity: 0.86;
     }
 
     .subheading {
@@ -109,10 +134,26 @@
         text-align: center;
         padding-top: 0px;
         padding-bottom: 42px;
+        opacity: 0.64;
     }
 
     .download-btn {
         text-align: center;
+    }
+
+    .icon-features {
+        font-size: 16px;
+        padding: 6px;
+        text-align: center;
+        background-color: ${theme.accent};
+        color: #ffffff;
+        border-radius: 50%;
+        margin: auto;
+        height: 16px;
+        width: 16px;
+        opacity: 0.86;
+        min-width: unset;
+        min-height: unset;
     }
 
     i {
@@ -121,6 +162,15 @@
         min-width: 32px;
         min-height: 32px;
         color: ${theme.to};
+    }
+
+    th {
+        text-align: center;
+        opacity: 0.64;
+    }
+
+    .td-center {
+        text-align: center;
     }
 
 	.docker-icon {
@@ -160,10 +210,10 @@
     }
 
     .hints {
-        color: #333333;
+        color: #323232;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         background-color: white;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.29), 0 12px 24px 0 rgba(0, 0, 0, 0.19);
     }
@@ -174,6 +224,8 @@
         margin-top: 32px;
         margin-bottom: 32px;
         max-width: 276px;
+        margin-left: 48px;
+        margin-right: 48px;
     }
 
     @media (min-width: 1024px) {
@@ -208,8 +260,17 @@
         text-align: center;
     }
 
+    icon-container {
+        height: 26px;
+        width: 26px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
     .hint-title {
         text-align: center;
+        opacity: 0.86;
     }
 
     @media (min-width: 1024px) {
@@ -256,6 +317,10 @@
         margin: auto;
     }
 
+    .feature-text {
+        line-height: 1.4;
+    }
+
     .card {
         background-color: #fff;
         color: #323232;
@@ -288,6 +353,7 @@
     p, h1, h2, h3, h4, h5, h6 {
         padding: 24px;
         margin: 0;
+        opacity: 0.86;
     }
 
     #google-play {
@@ -388,13 +454,13 @@
                     <tr>
                         <td>${item.name}</td>
                         ${item.supported.map(supported => `
-                            <td><i class="${supported == 'clock' ? 'far' : 'fas'} fa-${supported}"</i></td>
+                            <td class='td-center'><i class="icon-features ${supported == 'clock' ? 'far' : 'fas'} fa-${supported}"</i></td>
                     `).join('')}
                     </tr>
                `).join('')}
             </tbody>
         </table>
-        <p>${text.features.content}</p>
+        <p class="feature-text">${text.features.content}</p>
     </div>
 
     <div id="instructions" class="card">
