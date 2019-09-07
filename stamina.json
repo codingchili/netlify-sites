@@ -8,31 +8,31 @@
   	},
     {
       "template": "templates/git-project.html",
-      "data": "sites/zapperfly.json",
+      "data": "sites/zapperfly.yaml",
       "dynamic": false,
       "web": "./web"
     },
     {
 	  "template": "templates/git-project.html",
-      "data": "sites/eth-ingest.json",
+      "data": "sites/eth-ingest.yaml",
       "dynamic": false,
       "web": "./web"
     },
     {
       "template": "templates/git-project.html",
-      "data": "sites/excelastic.json",
+      "data": "sites/excelastic.yaml",
       "dynamic": false,
       "web": "./web"
     },
     {
       "template": "templates/git-project.html",
-      "data": "sites/kibana-mithril.json",
+      "data": "sites/kibana-mithril.yaml",
       "dynamic": false,
       "web": "./web"
     },
     {
       "template": "templates/git-project.html",
-      "data": "sites/mouse.json",
+      "data": "sites/mouse.yaml",
       "dynamic": false,
       "web": "./web"
     }
