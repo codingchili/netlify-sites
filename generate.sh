@@ -12,9 +12,10 @@ function generate {
 
 template=templates/git-project.html
 
-generate $template sites/zapperfly.json
-generate $template sites/eth-ingest.json
-generate $template sites/kibana-mithril.json
-generate $template sites/excelastic.json
+generate $template sites/zapperfly.yaml
+generate $template sites/eth-ingest.yaml
+generate $template sites/kibana-mithril.yaml
+generate $template sites/excelastic.yaml
+generate $template sites/mouse.yaml
 
 echo all sites generated.
