@@ -37,6 +37,25 @@
             /*mix-blend-mode: multiply;*/
         }
 
+        ::selection {
+            background: ${theme.accent};
+            color: #fffffffe;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0.4em;
+            opacity: 0.42;
+            background-color: ${theme.to};
+        }
+
+        body::-webkit-scrollbar-track {
+            background-color: #00000088;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: ${theme.accent};
+        }
+
         #content {
             /*animation: fadein 0.8s;*/
             display: flex;
@@ -208,9 +227,15 @@
             animation-fill-mode: forwards;
         }
 
-        p, label {
+        p {
             opacity: 0.86;
             color: #323232;
+        }
+
+        label {
+            opacity: 0.64;
+            color: #323232;
+            font-weight: 200;
         }
 
         ${text.projects.map((item, index) =>`
