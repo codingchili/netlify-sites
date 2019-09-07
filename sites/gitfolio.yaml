@@ -64,6 +64,9 @@ text:
         - href: https://play.google.com/store/apps/details?id=com.codingchili.mouse.enigma
           icon: fab fa-google-play
           alt: google play
+        - href: https://www.youtube.com/watch?v=CcIvlFmBL5w
+          icon: fab fa-youtube
+          alt: youtube
     - name: Kibana Mithril
       description: A plugin for Kibana that adds authentication to access the user interface.
         Works with LDAP and has support for 2-factor authentication. Users may be stored
@@ -232,6 +235,9 @@ text:
         - href: https://github.com/codingchili/chili-game-ext
           icon: fab fa-github
           alt: github
+        - href: https://www.youtube.com/watch?v=TlFcvCJb9lw
+          icon: fab fa-youtube
+          alt: youtube
     - name: Pi-zero Ethermeter
       description: Uses the cryptocompare API to retrieve the current price of a chosen
         cryptocurrency trading pair. The change in the last 24 hours is displayed on
@@ -250,6 +256,25 @@ text:
         - href: https://www.youtube.com/watch?v=rkcM4-2oynY
           icon: fab fa-youtube
           alt: youtube
+    - name: chili-core
+      description: The chili-core is a backend framework which builds on top
+        of Vert.x and Hazelcast. Support for transparent async persistence and
+        for protocol transparent API's.
+      image: img/chili-core.png
+      tags:
+        - vert.x
+        - hazelcast
+        - mongodb
+        - elasticsearch
+        - cqengine
+        - chili
+      links:
+        - href: https://codingchili.github.io/chili-core/
+          icon: fas fa-link
+          alt: website
+        - href: https://github.com/codingchili/chili-core
+          icon: fab fa-github
+          alt: github
     - name: Onegram
       description: An Instagram-like Android application, only less refined. Support
         for uploading images, tagging, searching and saving to the users gallery. The
