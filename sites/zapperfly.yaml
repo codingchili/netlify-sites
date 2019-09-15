@@ -60,7 +60,7 @@ text:
       - name: 'Plugin: github webhook receiver'
         supported:
           - clock
-      - name: SVG build status bagde
+      - name: SVG build status badge
         supported:
           - clock
     content: Zapperfly aims to be a minimal bootstrap platform for creating a set
