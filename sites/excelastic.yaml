@@ -56,8 +56,7 @@ text:
           - clock
     content: Excelastic uses the REST-API with the high level REST client. This allows
       us to more quickly adapt to later versions. When importing we are using the
-      batch indexing API to maximize throughput. If you need additional features like
-      HTTPS and authentication we recommend that you setup a reverse proxy.
+      batch indexing API to maximize throughput.
   instructions:
     enabled: true
     header: Setup
