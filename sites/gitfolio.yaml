@@ -350,7 +350,7 @@ text:
         These are the libraries & frameworks I frequently use and enjoy. I do a bit of Java EE as well, with
         JAX-RS/JAX-WS and Wicket on the frontend. They're not on the list because I'm much more productive
         and enjoy working more with the given alternatives.
-  footer: "&copy; Robin Duda 2019"
+  footer: "&copy; Robin Duda 2021"
 contact:
   enabled: true
   github_repository: zapperfly-asm

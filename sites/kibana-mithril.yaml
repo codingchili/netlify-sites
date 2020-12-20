@@ -74,7 +74,7 @@ text:
       enabled: false
   sponsored:
     enabled: false
-  footer: "&copy; Robin Duda 2019"
+  footer: "&copy; Robin Duda 2021"
 contact:
   enabled: true
   github_repository: kibana-mithril
