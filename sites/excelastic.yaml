@@ -45,12 +45,15 @@ text:
       - name: Terminal import
         supported:
           - check
+      - name: Authentication
+        supported:
+          - check
+      - name: Encryption (TLS)
+        supported:
+          - check
       - name: JSONL import
         supported:
           - clock
-      - name: Authentication
-        supported:
-          - times
     content: Excelastic uses the REST-API with the high level REST client. This allows
       us to more quickly adapt to later versions. When importing we are using the
       batch indexing API to maximize throughput. If you need additional features like
