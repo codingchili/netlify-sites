@@ -23,10 +23,21 @@ text:
       Prefer reactive microservices, Docker and NoSQL, disinterested in application servers and
       object relational mappers :)
   projects:
+    - name: Auction Client
+      description: This Android application is a game auction client for use with the
+        game in development, Mutable Bunnies.
+      image: img/android-auctions.png
+      tags:
+        - android
+        - kotlin
+      links:
+        - href: https://github.com/codingchili/mutable-bunnies-auctions
+          icon: fab fa-github
+          alt: github
     - name: Zapperfly Assembler
       description: Zapperfly assembler is a clustered build server that aims to be small
         and easy to customize without relying on third party plugins.
-      image: img/zapperfly.jpg
+      image: img/zapperfly.png
       tags:
         - hazelcast
         - vert.x
@@ -207,7 +218,7 @@ text:
       description: Chromecast receiver and sender application to livestream the coinbase
         websocked feed in real time. Uses the latest iteration (CAF - v3) of the chromecast
         framework.
-      image: img/coinbasecasted.jpg
+      image: img/coinbasecasted.png
       tags:
         - chromecast
         - javascript
