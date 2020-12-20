@@ -8,9 +8,9 @@ seo:
     and transition to newer versions faster.
 theme:
   backup: "#15569f"
-  from: "#ff7b7b"
-  to: "#7a0098"
-  accent: "#2780e3"
+  from: "#19d3dc"
+  to: "#003d69"
+  accent: "#01474c"
   menu: "#424242"
 text:
   heading: Excelastic
